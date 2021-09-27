@@ -33,6 +33,11 @@ body{
     color: white;
 }
 
+.link-active{
+    font-size: larger;
+    font-weight: bold;
+}
+
 /* lists */
 .list-non-bullet{
     padding-inline-start: 0px;
@@ -55,6 +60,7 @@ label{
     margin: auto;
     width: 15rem;
     height: 2rem;
+    padding-left: 1rem;
 }
 /* button */
 button{
@@ -65,6 +71,10 @@ button{
     color: white;
     width: 10rem;
     height: 2rem;
+    font: inherit;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
 }
 
 
@@ -74,6 +84,11 @@ button{
     padding: auto;
     text-align: center;
     padding: 0.5rem 1rem;
+}
+
+#output-text{
+    font-size: larger;
+    font-weight: bold;
 }
 
 footer{
