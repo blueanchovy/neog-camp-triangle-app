@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;700&display=swap');
+
+:root{
+    --primary : 
+    #10B981;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+
+/* nav-bar  */
+.navigation{
+   background-color: var(--primary);
+    margin : 0px;
+    padding: 1rem;
+}
+
+.navigation .nav-brand{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.navigation .nav-pills{
+    text-align: right;
+}
+
+/* links */
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+/* lists */
+.list-non-bullet{
+    padding-inline-start: 0px;
+}
+.list-item-inline{
+    display: inline;
+    margin : 0rem 0.5rem;
+    color: white;
+}
+
+label{
+    display : block;
+    margin: 0.5rem;
+}
+
+.input-area{
+    border: 1px solid var(--primary);
+    border-radius : 0.5rem;
+    display : block;
+    margin: auto;
+    width: 15rem;
+    height: 2rem;
+}
+/* button */
+button{
+    margin: 1rem; 
+    border-radius: 0.25rem;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: white;
+    width: 10rem;
+    height: 2rem;
+}
+
+
+#container{
+    max-width: 600px;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+footer{
+    padding: 1rem 1rem 1rem 0rem;
+    background-color: var(--primary);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
