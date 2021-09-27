@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,56 @@
     <link href="style.css" rel="stylesheet" />
     <title>Triangle App</title>
 </head>
+
 <body>
-    <header>
-        <h1>Fun with Triangles</h1>
-        <nav>
-            <h3>Is Triangle?</h3>
-            <h3>Quiz</h3>
-            <h3>Hypotenuse</h3>
-            <h3>Area</h3>
-        </nav>
-    </header>
-    
-    <div>
+    <nav class="navigation">
+        <div class="nav-brand"><a class="link" href="/index.html">Fun with Triangles</a></div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a class="link" href="/index.html">Is Triangle?</a></li>
+            <li class="list-item-inline"><a class="link" href="/quiz.html">Quiz</a></li>
+            <li class="list-item-inline">
+                <a class="link" href="/hypotenuse.html">Hypotenuse</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/area.html">Area</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
         <h2>Angles of Triangles</h2>
         <label for="angle-1">Angle 1</label>
-        <input id="angle-1" />
+        <input id="angle-1" class="input-area" />
         <label for="angle-2">Angle 2</label>
-        <input id="angle-2" />
+        <input id="angle-2" class="input-area" />
         <label for="angle-3">Angle 3</label>
-        <input id="angle-3" />
+        <input id="angle-3" class="input-area" />
         <button id="check-btn">Is Triangle?</button>
         <p id="output-text"></p>
     </div>
 
     <footer>
-        <h3>Connect with me on</h3>
-        <nav>
-           <h3>Github</h3>
-           <h3>Twitter</h3> 
-           <h3>Linkedin</h3>
-        </nav>
+        <strong class="nav-brand">Connect with me on</strong>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline" href="/">
+                <a class="link" href="https://github.com/blueanchovy">
+                    Github
+                </a>
+            </li>
+            <li class="list-item-inline" href="/">
+                <a class="link" href="https://twitter.com/zaalimmanjha">
+                    Twitter
+                </a>
+            </li>
+            <li class="list-item-inline" href="/">
+                <a class="link" href="https://www.linkedin.com/in/manishkumarjha-1337/">
+                    Linkedin
+                </a>
+            </li>
+        </ul>
     </footer>
 
     <script src="app.js" type="text/javascript"></script>
 </body>
+
 </html>
