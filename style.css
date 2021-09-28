@@ -51,7 +51,8 @@ body{
 }
 
 label{
-    margin: 1rem;
+    display: block;
+    margin: 0.5rem;
 }
 
 .input-area{
@@ -82,7 +83,7 @@ button{
 
 #container{
     max-width: 600px;
-    margin: auto;
+    margin: 1rem auto;
     padding: relative;
     text-align: center;
     padding: 0.5rem 1rem;
