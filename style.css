@@ -8,6 +8,8 @@
 
 body{
     margin: 0px;
+    height: 100%;
+    padding: 0px;
 }
 
 /* nav-bar  */
@@ -45,12 +47,11 @@ body{
 .list-item-inline{
     display: inline;
     margin : 0rem 0.5rem;
-    color: white;
+    
 }
 
 label{
-    display : block;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 .input-area{
@@ -64,40 +65,57 @@ label{
 }
 /* button */
 button{
-    margin: 1rem; 
+    margin: 1rem auto; 
     border-radius: 0.25rem;
     background-color: var(--primary);
     border: 1px solid var(--primary);
     color: white;
-    width: 10rem;
+    width: auto;
     height: 2rem;
     font: inherit;
     font-weight: bold;
     font-size: larger;
     cursor: pointer;
+    display: block;
 }
 
 
 #container{
     max-width: 600px;
     margin: auto;
-    padding: auto;
+    padding: relative;
     text-align: center;
     padding: 0.5rem 1rem;
+    min-height: 100%;
+    margin-bottom: 600px;
 }
 
 #output-text{
     font-size: larger;
     font-weight: bold;
+    text-align: center;
+    
 }
 
 footer{
-    padding: 1rem 1rem 1rem 0rem;
-    background-color: var(--primary);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
     text-align: center;
     color: white;
-    margin: 0px;
+    background-color: var(--primary);
+    width: 100%;
+    bottom: 0;
+    padding: 1rem 0rem;
+    /* position: absolute; */
+    /*margin-top: relative;
+    
+    
+    
+    
+    
+     */
+}
+
+.quiz-form{
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
 }
