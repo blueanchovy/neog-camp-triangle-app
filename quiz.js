@@ -16,8 +16,16 @@ const rightAnswers = ["90°",
 calculateScore = () => {
     let score = 0;
     let index = 0;
+    let val = 0;
     const formResults = new FormData(quizForm);
     for(let value of formResults.values()){
+        if(Number(value.length) === 0){
+            val+=1;
+            if(val === 10){
+                outputArea.innerText = "Please enter atleast one answer";
+                break;
+            }
+        }
         if(value === rightAnswers[index]){
             score+=1;
         }
