@@ -13,19 +13,25 @@ const rightAnswers = ["90°",
 "no",
 "45°"];
 
+function isWholeQuizAttempted(input) {
+    let val, count = 0;
+    for (val of input) {
+      count += 1;
+    }
+  
+    if (count === rightAnswers.length) {
+      return true;
+    }
+     else {
+      outputArea.innerText = "Please attempt the entire quiz.";
+    }
+}
+
 calculateScore = () => {
     let score = 0;
     let index = 0;
-    let val = 0;
     const formResults = new FormData(quizForm);
     for(let value of formResults.values()){
-        if(Number(value.length) === 0){
-            val+=1;
-            if(val === 10){
-                outputArea.innerText = "Please enter atleast one answer";
-                break;
-            }
-        }
         if(value === rightAnswers[index]){
             score+=1;
         }
@@ -35,6 +41,9 @@ calculateScore = () => {
 };
 
 submitButton.addEventListener('click', () => {
-    calculateScore();
+    const formResults = new FormData(quizForm);
+    if (isWholeQuizAttempted(formResults.values())) {
+        calculateScore();
+    }
 });
 
