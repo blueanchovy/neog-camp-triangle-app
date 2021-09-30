@@ -9,7 +9,7 @@ calculateArea = () => {
     let b = Number(secondSide.value);
     let c = Number(thirdSide.value);
     let s = (a + b + c)/2;
-    let area = Math.sqrt(s*(s-a)*(s-b)*(s-c)).toFixed(4);
+    let area = Math.sqrt(s*(s-a)*(s-b)*(s-c)).toFixed(2);
     outputArea.innerText = "The area of the triangle using Heron's Formula is " + area;
 };
 

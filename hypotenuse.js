@@ -11,7 +11,7 @@ calculateHypotenuse = () => {
         outputText.innerText = "Please enter all values greater than 0";
     }
     else{
-        outputText.innerText = "Hypotenuse is " + Math.hypot(baseValue.value, heightValue.value);
+        outputText.innerText = "Hypotenuse is " + Math.hypot(baseValue.value, heightValue.value).toFixed(2);
     }
 };
 
