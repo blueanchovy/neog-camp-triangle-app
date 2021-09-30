@@ -14,5 +14,19 @@ calculateArea = () => {
 };
 
 calculateButton.addEventListener('click', () =>{
-    calculateArea();
+    let a = Number(firstSide.value);
+    let b = Number(secondSide.value);
+    let c = Number(thirdSide.value);
+    if(Number(firstSide.value) === 0 || Number(secondSide.value) === 0 || Number(thirdSide.value) === 0){
+        outputArea.innerText = "Please don't leave the inputs as blank or 0";
+    }
+    else if(Number(firstSide.value) < 0 || Number(secondSide.value) <0 || Number(thirdSide.value) <0){
+        outputArea.innerText = "Please enter all angle values greater than 0";
+    }
+    else if(a + b <= c || b + c <= a ||a + c <= b){
+        outputArea.innerText = "This is not a valid triangle as the sum of its two sides is not greater than its third side.";
+    }
+    else{   
+        calculateArea();
+    }
 });
